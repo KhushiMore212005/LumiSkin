@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f4e7ff;
+}
+
+/* Page */
+.derm-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.derm-container {
+  width: 380px;
+}
+
+/* Main Card */
+.derm-card {
+  background: #fff;
+  border-radius: 26px;
+  padding: 22px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Card Header */
+.derm-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.derm-back {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.derm-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Subtitle */
+.derm-subtitle {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+/* Doctor Card */
+.doctor-card {
+  background: #fafafa;
+  border-radius: 18px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #eee;
+}
+
+/* Doctor Header */
+.doc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.doc-header h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.doc-header span {
+  font-size: 12px;
+  color: #777;
+}
+
+.price {
+  font-weight: 600;
+  color: #ff4bb1;
+}
+
+/* Description */
+.doc-desc {
+  font-size: 13px;
+  color: #555;
+  margin: 10px 0 12px;
+}
+
+/* Features */
+.doc-features {
+  display: flex;
+  gap: 14px;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.doc-features span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Primary Button (same app button) */
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #ff4bb1, #7f4dff);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}

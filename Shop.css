@@ -1,0 +1,155 @@
+.shop-page {
+  min-height: 100vh;
+  background: #f3e8ff;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.shop-card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+/* HEADER */
+.shop-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.shop-back {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* CATEGORY TABS */
+.shop-tabs {
+  display: flex;
+  background: #f6f6f6;
+  padding: 6px;
+  border-radius: 30px;
+  margin: 20px 0 12px;
+}
+
+.shop-tab {
+  flex: 1;
+  border: none;
+  padding: 10px 0;
+  border-radius: 25px;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.shop-tab.active {
+  background: #fde2f3;
+  font-weight: 600;
+}
+
+/* BUDGET CHIPS */
+.budget-chips,
+.skin-chips {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 14px;
+}
+
+.budget-chip {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  background: #f3f4f6;
+  font-size: 12px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.budget-chip.active {
+  background: #c084fc;
+  color: white;
+  font-weight: 600;
+}
+
+/* SKIN TYPE CHIPS */
+.skin-chip {
+  padding: 7px 14px;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.skin-chip.active {
+  background: #fde2f3;
+  border-color: #fde2f3;
+  font-weight: 600;
+}
+
+/* PRODUCTS */
+.shop-products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.shop-product-card {
+  background: #fafafa;
+  border-radius: 18px;
+  padding: 15px;
+  text-align: center;
+}
+
+.shop-img-box {
+  width: 100%;
+  height: 130px;
+  background: #f6f7fb;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.shop-img-box img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.shop-product-card h4 {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.shop-product-card p {
+  font-size: 13px;
+  color: #777;
+}
+
+.shop-product-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #ff4bb1, #7f4dff);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.shop-product-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(127, 77, 255, 0.3);
+}

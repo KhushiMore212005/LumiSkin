@@ -1,0 +1,228 @@
+/* ============================
+   GLOBAL THEME (same app theme)
+============================ */
+:root {
+  --pink: #ff4bb1;
+  --purple: #7f4dff;
+  --bg: #f4e7ff;
+  --card-bg: #ffffff;
+  --text-main: #1f1f3b;
+  --text-muted: #8a8aa3;
+  --pill-bg: #f3d4ff;
+  --gradient: linear-gradient(90deg, #ff4bb1, #7f4dff);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ============================
+   PAGE WRAPPER
+============================ */
+.routine-wrapper {
+  width: 380px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 24px 18px 36px;
+  box-sizing: border-box;
+}
+
+/* ============================
+   HEADER (same as Profile / Progress)
+============================ */
+.rt-header {
+  background: white;
+  padding: 16px 18px;
+  border-radius: 26px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.rt-back {
+  font-size: 22px;
+  color: var(--pink);
+  cursor: pointer;
+}
+
+.rt-header h2 {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-main);
+}
+
+/* ============================
+   ROUTINE TABS – SAME AS PROFILE TABS
+============================ */
+.rt-tabs {
+  display: flex;
+  background: #f2f2f2;
+  border-radius: 18px;
+  padding: 6px;
+  margin-bottom: 22px;
+  gap: 6px;
+}
+
+.rt-tab {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 16px;
+  border: 1.5px solid #ddd;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #444;
+  text-align: center;
+  transition: 0.25s ease;
+}
+
+/* Hover – same as Profile */
+.rt-tab:hover {
+  background: #fdeef6;
+}
+
+/* Active – same as Profile */
+.rt-tab.active {
+  background: #f8dff0;
+  border-color: #f3b7d8;
+  font-weight: 600;
+}
+
+
+/* ============================
+   ROUTINE CARD (main card)
+============================ */
+.rt-card {
+  background: var(--card-bg);
+  border-radius: 26px;
+  padding: 20px;
+  margin-bottom: 22px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.rt-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-main);
+}
+
+/* ============================
+   TASK ITEM (same card pattern)
+============================ */
+.rt-task {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #fdeef6;
+  padding: 14px;
+  border-radius: 18px;
+  margin-bottom: 12px;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.rt-task.done {
+  background: #e9ffe9;
+}
+
+.rt-check-container {
+  margin-top: 4px;
+}
+
+.rt-check {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--purple);
+}
+
+.rt-check.checked {
+  background: var(--gradient);
+  border-color: transparent;
+  color: white;
+}
+
+/* ============================
+   TASK DETAILS
+============================ */
+.rt-task-details {
+  flex: 1;
+}
+
+.rt-task-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rt-task-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.rt-task-time {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.rt-task-brand {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--purple);
+  margin: 4px 0;
+}
+
+.rt-task-desc {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ============================
+   FOOTER BUTTON
+============================ */
+.rt-footer-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 20px;
+  border: none;
+  background: var(--gradient);
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 75, 177, 0.35);
+  cursor: pointer;
+}
+/* ============================
+   PAGE + OUTER CARD (same app pattern)
+============================ */
+.routine-page {
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.routine-card {
+  width: 380px;
+  background: #fff;
+  border-radius: 28px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
