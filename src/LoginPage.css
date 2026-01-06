@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f4e7ff; /* soft aesthetic color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  width: 380px;
+  background: white;
+  padding: 35px 28px 45px;
+  border-radius: 24px;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Back Arrow */
+.back-arrow {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  font-size: 26px;
+  color: #d43f87;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.back-arrow:hover {
+  transform: translateX(-4px);
+  transition: 0.2s ease;
+}
+
+/* Icon Circle */
+.icon-circle-login {
+  width: 85px;
+  height: 85px;
+  margin: 20px auto 10px;
+  background: linear-gradient(135deg, #ff77d9, #8c4bff);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-icon {
+  color: white;
+  font-size: 32px;
+}
+
+/* Logo */
+.logo-text {
+  font-family: "Great Vibes", cursive;
+  font-size: 42px;
+  color: #d43f87;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Form Section */
+.form-section {
+  margin-top: 10px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1.5px solid #ddd;
+  font-size: 14px;
+  margin-bottom: 16px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  border-color: #d43f87;
+  box-shadow: 0 0 4px rgba(212, 63, 135, 0.3);
+}
+
+/* Remember Me Row */
+.remember-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  font-size: 13px;
+}
+
+.remember-row input {
+  width: auto;
+  margin: 0 6px 0 0;
+}
+
+.left-remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.forgot {
+  color: #d43f87;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Primary Button */
+.primary-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #ff4bb1, #7f4dff);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 5px;
+  transition: 0.2s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Divider */
+.divider {
+  margin: 22px 0;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
+.divider span {
+  display: inline-block;
+  width: 28%;
+  height: 1px;
+  background: #ddd;
+  vertical-align: middle;
+}
+
+/* Social Buttons */
+.social-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.social-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid #ddd;
+  background: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.social-btn:hover {
+  background: #f5f5f5;
+}
+
+.social-btn img {
+  width: 20px;
+}
+
+/* Signup Text */
+.signup-text {
+  text-align: center;
+  font-size: 14px;
+}
+
+.link {
+  color: #d43f87;
+  cursor: pointer;
+  font-weight: 600;
+}

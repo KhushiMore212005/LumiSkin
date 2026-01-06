@@ -1,0 +1,146 @@
+.progress-wrapper {
+  width: 380px;
+  margin: auto;
+  min-height: 100vh;
+  background: #f4e7ff;
+  font-family: "Poppins", sans-serif;
+  padding: 35px 28px 45px;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.pt-header {
+  background: white;
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.pt-header h2 {
+  flex: 1;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.pt-back {
+  font-size: 26px;
+  cursor: pointer;
+  color: #d43f87;
+}
+
+/* TABS */
+.pt-tabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.pt-tab {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 12px;
+  background: #f3d4ff;
+  color: #7a00c4;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pt-tab.active {
+  background: linear-gradient(90deg, #ff4bb1, #7f4dff);
+  color: white;
+}
+
+/* CARD */
+.pt-card {
+  background: white;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 24px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+/* CARD TITLE */
+.pt-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* GRID BOXES */
+.pt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.pt-box {
+  background: #ffe8fa;
+  padding: 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.pt-box strong {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.pt-box span {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.pt-primary {
+  background: linear-gradient(180deg, #ff4bb1, #7f4dff);
+  color: white;
+}
+
+/* GRAPH */
+.pt-legend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.pt-dot {
+  width: 10px;
+  height: 10px;
+  background: #ff4bb1;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.pt-graph {
+  height: 160px;
+  border-radius: 12px;
+  background: linear-gradient(to top, #ffe0f6, transparent);
+  position: relative;
+  overflow: hidden;
+}
+
+.pt-line {
+  width: 100%;
+  height: 3px;
+  background: #ff37b7;
+  position: absolute;
+  top: 65%;
+  animation: rise 2s ease-out;
+}
+
+@keyframes rise {
+  from { top: 80%; }
+  to { top: 65%; }
+}
