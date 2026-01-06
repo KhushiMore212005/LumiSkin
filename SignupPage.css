@@ -1,0 +1,184 @@
+/* PAGE BACKGROUND */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #f4e7ff, #f1efff);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  min-height: 100vh;
+}
+
+/* MAIN CARD */
+.signup-container,
+.login-container {
+  width: 380px;
+  background: #ffffff;
+  padding: 70px 28px 40px;
+  border-radius: 24px;
+  position: relative;
+  box-shadow: 0px 6px 25px rgba(0,0,0,0.1);
+  text-align: center;
+
+  /* allow circle to show fully */
+  overflow: visible;
+}
+
+/* BACK ARROW */
+.back-arrow {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  font-size: 26px;
+  color: #d43f87;
+  cursor: pointer;
+}
+
+/* CIRCLE WITH HEART */
+.icon-circle-signup {
+  width: 110px;
+  height: 110px;
+
+  /* move up to reduce gap between arrow & circle */
+  margin: -65px auto 15px;
+
+  background: linear-gradient(135deg, #ff77d9, #8c4bff);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-icon-signup {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+/* LUMISKIN LOGO TEXT */
+.signup-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 46px;
+  color: #d43f87;
+  margin-top: 8px;
+}
+
+/* SUBTITLE */
+.signup-sub {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* FORM LABELS */
+.form-section-signup label {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* INPUT FIELDS */
+.form-section-signup input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1.5px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 16px;
+  transition: 0.2s ease;
+}
+
+.form-section-signup input:focus {
+  border-color: #d43f87;
+  box-shadow: 0 0 4px rgba(212, 63, 135, 0.25);
+}
+
+/* MAIN BUTTON */
+.primary-btn-signup {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #ff4bb1, #7f4dff);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* DIVIDER */
+.divider-signup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.divider-signup span {
+  flex-grow: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+/* SOCIAL BUTTON ROW */
+.social-row-signup {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.social-btn {
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1.5px solid #ddd;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.social-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+/* BOTTOM TEXT */
+.signup-text-bottom {
+  text-align: center;
+  font-size: 14px;
+}
+
+.link {
+  color: #d43f87;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* MOBILE FIX */
+@media (max-width: 430px) {
+  .signup-container,
+  .login-container {
+    width: 90%;
+    padding-top: 80px;
+  }
+
+  .icon-circle-signup {
+    width: 100px;
+    height: 100px;
+    margin-top: -60px;
+  }
+
+  .signup-title {
+    font-size: 40px;
+  }
+}

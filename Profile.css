@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f4e7ff;
+}
+
+/* Page */
+.pf-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pf-container {
+  width: 380px;
+}
+
+/* Card */
+.pf-card {
+  background: #fff;
+  border-radius: 26px;
+  padding: 22px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Card Header */
+.pf-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.pf-back {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.pf-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Tabs */
+.pf-tabs {
+  display: flex;
+  background: #f2f2f2;
+  border-radius: 18px;
+  padding: 6px;
+  margin-bottom: 22px;
+  gap: 6px;
+}
+
+.pf-tab {
+  flex: 1;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1.5px solid #ddd;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  color: #444;
+  transition: 0.25s ease;
+}
+
+.pf-tab:hover {
+  background: #fdeef6;
+}
+
+.pf-tab.active {
+  background: #f8dff0;
+  border-color: #f3b7d8;
+  font-weight: 500;
+}
+
+/* User */
+.pf-user {
+  text-align: center;
+}
+
+.pf-avatar {
+  position: relative;
+  width: 90px;
+  margin: auto;
+}
+
+.pf-avatar-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #e9d8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.pf-avatar-edit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: none;
+  background: #ff4bb1;
+  color: white;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.pf-user h3 {
+  margin: 12px 0 4px;
+}
+
+.pf-user p {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Sections */
+.pf-section-title {
+  margin: 16px 0 10px;
+  font-size: 15px;
+}
+
+.pf-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.pf-row span:first-child {
+  color: #666;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #eee;
+  margin: 18px 0;
+}
+
+/* Primary Button */
+.pf-edit-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 14px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #ff4bb1, #7f4dff);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Skin Test */
+.pf-desc {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 14px;
+}
+
+.pf-option {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 16px;
+  border: 1.5px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+.pf-option:hover {
+  background: #fdeef6;
+}
+/* ================= SKIN TEST – MOBILE CARD PATTERN ================= */
+
+/* Skin Test main card (same pattern as other cards) */
+.skin-test-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Skin test title */
+.skin-test-card h4 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Steps list */
+.pf-steps {
+  padding-left: 18px;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.pf-steps li {
+  margin-bottom: 6px;
+}
+
+/* Gradient buttons – same mobile style */
+.skin-btn-group button {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 18px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #ff4bb1, #7f4dff);
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.skin-btn-group button:active {
+  transform: scale(0.98);
+}
+
+/* Result card (same UI pattern) */
+.skin-result {
+  margin-top: 16px;
+  background: #fff;
+  border-radius: 22px;
+  padding: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Result title */
+.skin-result h4 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+/* Result text */
+.skin-result p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  white-space: pre-line;
+}
