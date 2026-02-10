@@ -8,6 +8,8 @@ export default function Profile() {
   const [activeTab, setActiveTab] = useState("profile");
   const [skinResult, setSkinResult] = useState(null);
 
+  const [editProfileModal, setEditProfileModal] = useState(false)
+
   const skinResults = {
     dry: {
       title: "Skin Type: Dry",
@@ -81,7 +83,7 @@ Your skin is well balanced.`,
               <div className="pf-row"><span>Phone</span><span>+1 (555) 123-4567</span></div>
               <div className="pf-row"><span>Age</span><span>28</span></div>
 
-              <button className="pf-edit-btn">Edit Profile</button>
+              <button className="pf-edit-btn" onClick={() => setEditProfileModal(true)}>Edit Profile</button>
 
               <hr />
 
@@ -122,6 +124,43 @@ Your skin is well balanced.`,
               )}
             </>
           )}
+
+          {editProfileModal && (
+            <div className="modal show" tabIndex={-1} style={{ display: "block", backgroundColor: "rgba(0,0,0,0.5)" }}>
+              <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content">
+
+                  <div className="modal-header">
+                    <h5 className="modal-title">Edit Profile</h5>
+                    <button
+                      type="button"
+                      className="btn-close"
+                      onClick={() => setEditProfileModal(false)}
+                    />
+                  </div>
+
+                  <div className="modal-body">
+                    <p>Modal body text goes here.</p>
+                  </div>
+
+                  <div className="modal-footer">
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      onClick={() => setEditProfileModal(false)}
+                    >
+                      Close
+                    </button>
+                    <button type="button" className="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          )}
+
 
         </div>
       </div>
